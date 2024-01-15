@@ -1,0 +1,32 @@
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+div > span{
+        background-color: aqua;
+    }
+
+div p {
+    background-color: yellow;
+}
+
+/* Universal Selector*/
+*{
+    color: brown;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Psuedo Selector */
+a:visited{
+    color: green;
+}
