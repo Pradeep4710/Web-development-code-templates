@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline and Shadows</title>
+
+    <style>
+        .Box {
+            margin: 50px;
+            border: 2px solid black;
+            padding: 15px;
+            box-shadow: 5px 5px 5px cyan; /* h-offset, v-offset, blur-spread, color */
+            border-radius: 30px; /* affects left and right*/
+        }
+        .Box2 {
+            margin: 50px;
+            border: 2px solid blue;
+            padding: 15px;
+            box-shadow: inset 5px 5px 5px green; /* Internal shadow in the box after using the keyword inset */
+            border-radius: 30%; /* affects the top and bottom */
+        }
+        .textshadow{
+            margin: 50px;
+            padding: 20px;
+            font-size: 18px;
+            text-shadow: 2px 2px 2px yellowgreen; /* h-offset, v-offset, blur-spread, color */
+            border: 2px solid black;
+            border-radius: 25px;
+            outline: 3px solid black;
+            outline-offset: 5px; /* decides how far the outline isto the content */
+            /* we cannot use radius property on outline , but it can inherit it from border*/
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="Box">I am a box</div> 
+
+    <div class="Box2">I am also a box</div> 
+
+    <p class="textshadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia pariatur ipsa tempore beatae quia est, culpa, distinctio commodi rerum quam at labore. Vel sapiente repudiandae, facere inventore suscipit facilis aliquam. Ex cumque voluptate, aut illo vero aperiam ullam vitae, odit error labore enim, sed neque quibusdam assumenda amet quod suscipit animi voluptatum beatae adipisci ratione illum?</p>
+
+</body>
+</html>
